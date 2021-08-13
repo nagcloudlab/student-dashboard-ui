@@ -8,7 +8,9 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'npm run build'
+                dir("web-ui"){
+                    sh 'npm run build'
+                }
             }
         }
     }
