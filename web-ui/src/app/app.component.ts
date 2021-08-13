@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 
-// Nag
 
 @Component({
   selector: 'app-root',
