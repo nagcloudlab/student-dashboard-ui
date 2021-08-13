@@ -14,5 +14,13 @@ pipeline {
                 }
             }
         }
+        stage('docker:build') {
+            steps {
+                dir("web-ui"){
+                    sh 'docker build -t nagabhushanamn/web-ui .'
+                }
+            }
+        }
+        
     }
 }
